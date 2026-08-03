@@ -47,7 +47,7 @@ export default function Navbar() {
               alt="Aerosapien"
               width={180}
               height={44}
-              className={`object-contain transition-all duration-300 ${scrolled ? "brightness-100" : "brightness-0 invert"}`}
+              className={`object-contain transition-all duration-300 ${scrolled ? "" : "drop-shadow-[0_1px_8px_rgba(255,255,255,0.4)]"}`}
               unoptimized
             />
           </Link>
