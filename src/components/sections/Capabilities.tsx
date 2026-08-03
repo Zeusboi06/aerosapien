@@ -19,10 +19,10 @@ import {
 const capabilities = [
   {
     title: "Precision CNC Machining",
-    description: "Sub-millimetre tolerances up to ±0.01 mm across titanium, Inconel, NCM steel, aluminium, Delrin, and stainless steel alloys.",
+    description: "Sub-millimetre tolerances up to ±0.001 mm across titanium, Inconel, NCM steel, aluminium, Delrin, and stainless steel alloys.",
     icon: Settings,
     tag: "Core",
-    specs: ["5-Axis CNC", "±0.01 mm", "Multi-material"],
+    specs: ["5-Axis CNC", "±0.001 mm", "Multi-material"],
     accent: "#0A2342",
   },
   {
@@ -84,7 +84,7 @@ const capabilities = [
 ];
 
 const specs = [
-  { label: "Tolerances", value: "±0.01 mm", sub: "Industry-leading precision" },
+  { label: "Tolerances", value: "±0.001 mm", sub: "Industry-leading precision" },
   { label: "Materials", value: "12+", sub: "Aerospace-grade alloys" },
   { label: "Certifications", value: "AS9100D", sub: "ISO 9001:2015 compliant" },
   { label: "Turnaround", value: "72 hrs", sub: "Prototype to delivery" },
