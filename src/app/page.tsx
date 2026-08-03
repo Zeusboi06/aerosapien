@@ -11,6 +11,7 @@ import FactoryGallery from "@/components/sections/FactoryGallery";
 import Quality from "@/components/sections/Quality";
 import Sustainability from "@/components/sections/Sustainability";
 import Contact from "@/components/sections/Contact";
+import WhyAerosapien from "@/components/sections/WhyAerosapien";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Capabilities />
       <CapabilityDeepDive />
       <Products />
+      <WhyAerosapien />
       <ProgramTimeline />
       <SplitResearchPanel />
       <TieredTrustWall />
