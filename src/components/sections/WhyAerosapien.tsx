@@ -4,103 +4,114 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Section from "@/components/Section";
+import Image from "next/image";
+import { CheckCircle2 } from "lucide-react";
 
-const timelineSteps = [
-  { title: "Research", desc: "Feasibility, material science, and process innovation." },
-  { title: "Engineering", desc: "Precision CAD/CAM design and structural analysis." },
-  { title: "Manufacturing", desc: "5-axis CNC machining and advanced fabrication." },
-  { title: "Inspection", desc: "CMM verification to ±0.004 mm tolerances." },
-  { title: "Delivery", desc: "Secure, traceable delivery to integration partners." },
-  { title: "Support", desc: "Ongoing engineering and lifecycle support." },
+const whyPoints = [
+  { label: "High Precision CNC Machining", sub: "Class-1 Critical Components" },
+  { label: "GD&T Based Manufacturing", sub: "Aerospace Grade Materials" },
+  { label: "Titanium · Aluminium · Inconel · Stainless Steel", sub: "Multi-material capability" },
+  { label: "Mission Critical Assemblies", sub: "Medical Automation · Defence · Space Hardware" },
+  { label: "100% Dimensional Inspection", sub: "Complete Manufacturing Traceability" },
+  { label: "Made in India", sub: "Atmanirbhar Bharat — Precision Built" },
 ];
 
 export default function WhyAerosapien() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const lineRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    if (sectionRef.current && lineRef.current) {
-      const steps = sectionRef.current.querySelectorAll(".timeline-step");
-      
-      // Animate the connecting line
-      gsap.fromTo(lineRef.current,
-        { scaleY: 0 },
+    if (sectionRef.current) {
+      const items = sectionRef.current.querySelectorAll(".why-item");
+      gsap.fromTo(
+        items,
+        { y: 30, opacity: 0 },
         {
-          scaleY: 1,
-          transformOrigin: "top",
-          ease: "none",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top center",
-            end: "bottom center",
-            scrub: true,
-          }
+          y: 0,
+          opacity: 1,
+          duration: 0.6,
+          stagger: 0.08,
+          ease: "power2.out",
+          scrollTrigger: { trigger: sectionRef.current, start: "top 75%" },
         }
       );
-
-      // Animate each step
-      steps.forEach((step, i) => {
-        gsap.fromTo(step,
-          { x: i % 2 === 0 ? -50 : 50, opacity: 0 },
-          {
-            x: 0,
-            opacity: 1,
-            duration: 0.6,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: step,
-              start: "top 80%",
-            }
-          }
-        );
-      });
     }
   }, []);
 
   return (
-    <Section id="why-us" ref={sectionRef} className="bg-white">
-      <div className="flex flex-col items-center mb-24 text-center max-w-3xl mx-auto">
-        <h2 className="text-[var(--color-brand-accent)] font-semibold tracking-wider uppercase text-sm mb-4">
-          The Aerosapien Advantage
+    <Section id="why-us" ref={sectionRef} className="bg-[#f8f9fc] relative overflow-hidden">
+      {/* Header */}
+      <div className="flex flex-col items-center mb-14 text-center max-w-3xl mx-auto">
+        <span className="inline-flex items-center gap-2 text-[var(--color-brand-accent)] font-semibold tracking-widest uppercase text-xs mb-4 bg-[var(--color-brand-accent)]/8 px-4 py-2 rounded-full border border-[var(--color-brand-accent)]/15">
+          <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-accent)] animate-pulse" />
+          Engineered for Certainty
+        </span>
+        <h2 className="text-4xl md:text-5xl font-bold text-[var(--color-deep-navy)] leading-tight">
+          Why Industry Leaders<br />
+          <span className="text-[var(--color-brand-accent)]">Choose AEROSAPIEN</span>
         </h2>
-        <h3 className="text-3xl md:text-5xl font-bold text-[var(--color-deep-navy)]">
-          Why Aerosapien?
-        </h3>
+        <p className="mt-5 text-base text-slate-500 font-sans leading-relaxed max-w-2xl">
+          From Aerospace to Space, Defence to Medical Automation — AEROSAPIEN delivers world-class
+          precision engineering solutions trusted by India&apos;s leading organizations.
+        </p>
       </div>
 
-      <div className="relative max-w-4xl mx-auto px-4">
-        {/* Central Line */}
-        <div className="absolute left-12 md:left-1/2 top-0 bottom-0 w-1 bg-gray-100 -translate-x-1/2">
-          <div ref={lineRef} className="w-full h-full bg-[var(--color-brand-primary)] origin-top" />
+      {/* Main grid: image + reasons */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        {/* LEFT: Exhibition / Pioneer image */}
+        <div className="relative rounded-2xl overflow-hidden shadow-2xl group h-[420px] lg:h-[500px]">
+          <Image
+            src="/images/about/aerosapien-about.jpg"
+            alt="Aerosapien — Pioneer Aerospace Engineering & Manufacturing"
+            fill
+            className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[var(--color-deep-navy)]/80 via-[var(--color-deep-navy)]/20 to-transparent" />
+
+          {/* Overlay stats */}
+          <div className="absolute bottom-0 left-0 right-0 p-6">
+            <div className="grid grid-cols-3 gap-3">
+              {[
+                { val: "ISO 9001", label: "Certified" },
+                { val: "AS9100D", label: "Standards" },
+                { val: "±0.001mm", label: "Precision" },
+              ].map((s, i) => (
+                <div key={i} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 text-center">
+                  <div className="text-white font-bold text-sm font-mono">{s.val}</div>
+                  <div className="text-white/60 text-[10px] mt-0.5">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
-        {/* Timeline Steps */}
-        <div className="space-y-12">
-          {timelineSteps.map((step, index) => (
-            <div key={index} className={`timeline-step relative flex items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
-              
-              {/* Dot */}
-              <div className="absolute left-12 md:left-1/2 w-4 h-4 rounded-full bg-[var(--color-brand-accent)] -translate-x-1/2 border-4 border-white shadow-sm z-10" />
-              
-              {/* Content */}
-              <div className={`ml-24 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pl-12' : 'md:pr-12 md:text-right'}`}>
-                <div className="bg-[var(--color-soft-gray)] p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
-                  <span className="text-[var(--color-brand-accent)] font-mono text-sm font-bold block mb-2 opacity-60">
-                    PHASE 0{index + 1}
-                  </span>
-                  <h4 className="text-xl font-bold text-[var(--color-deep-navy)] mb-2 group-hover:text-[var(--color-brand-primary)] transition-colors">
-                    {step.title}
-                  </h4>
-                  <p className="text-slate-600 font-sans text-sm">
-                    {step.desc}
-                  </p>
-                </div>
+        {/* RIGHT: Why points */}
+        <div className="space-y-4">
+          <p className="text-sm font-bold uppercase tracking-widest text-[var(--color-brand-accent)] mb-6">
+            Aerospace Manufacturing Standards
+          </p>
+          {whyPoints.map((pt, i) => (
+            <div
+              key={i}
+              className="why-item flex items-start gap-4 bg-white border border-slate-100 rounded-xl px-5 py-4 shadow-sm hover:shadow-md hover:border-[var(--color-brand-accent)]/20 transition-all duration-300 group"
+            >
+              <CheckCircle2 className="w-5 h-5 text-[var(--color-brand-accent)] shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+              <div>
+                <span className="block text-sm font-bold text-[var(--color-deep-navy)]">{pt.label}</span>
+                <span className="block text-xs text-slate-400 mt-0.5 font-sans">{pt.sub}</span>
               </div>
-              
             </div>
           ))}
+
+          <div className="mt-6 bg-[var(--color-deep-navy)] rounded-xl p-5 text-white">
+            <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-brand-accent)] mb-2">Our Commitment</p>
+            <p className="text-sm font-sans text-white/80 leading-relaxed">
+              At AEROSAPIEN, precision is more than a manufacturing capability — it is our culture.
+              Every project is executed with meticulous attention to detail, ensuring every component
+              meets the demanding standards required for aerospace, defence, space exploration, and healthcare.
+            </p>
+          </div>
         </div>
       </div>
     </Section>
