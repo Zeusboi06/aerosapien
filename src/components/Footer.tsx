@@ -16,7 +16,7 @@ export default function Footer() {
                 alt="Aerosapien Logo"
                 width={190}
                 height={46}
-                className="object-contain brightness-0 invert"
+                className="object-contain"
                 unoptimized
               />
             </Link>
