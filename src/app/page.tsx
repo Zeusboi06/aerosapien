@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import PrecisionCallout from "@/components/sections/PrecisionCallout";
 import About from "@/components/sections/About";
+import Capabilities from "@/components/sections/Capabilities";
 import CapabilityDeepDive from "@/components/sections/CapabilityDeepDive";
 import Products from "@/components/sections/Products";
 import ProgramTimeline from "@/components/sections/ProgramTimeline";
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <PrecisionCallout />
       <About />
+      <Capabilities />
       <CapabilityDeepDive />
       <Products />
       <ProgramTimeline />
