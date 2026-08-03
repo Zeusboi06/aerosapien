@@ -3,7 +3,7 @@
 import { Gauge, ShieldCheck, Compass, Layers, Award } from "lucide-react";
 
 const callouts = [
-  { icon: Gauge, label: "Precision", value: "±0.004 mm" },
+  { icon: Gauge, label: "Precision", value: "\u00b10.01 mm" },
   { icon: Layers, label: "Materials", value: "Ti / Inconel 718" },
   { icon: ShieldCheck, label: "Quality", value: "AS9100D" },
   { icon: Compass, label: "Heritage", value: "ISRO & HAL" },
@@ -17,18 +17,11 @@ export default function PrecisionCallout() {
         {callouts.map((item, idx) => {
           const Icon = item.icon;
           return (
-            <div
-              key={idx}
-              className="flex items-center space-x-2.5"
-            >
+            <div key={idx} className="flex items-center space-x-2.5">
               <Icon className="w-4 h-4 text-[var(--color-brand-accent)]" />
               <div className="flex items-baseline space-x-1.5">
-                <span className="text-[11px] uppercase tracking-wider text-slate-500 font-sans">
-                  {item.label}
-                </span>
-                <span className="text-sm font-bold text-white">
-                  {item.value}
-                </span>
+                <span className="text-[11px] uppercase tracking-wider text-slate-500 font-sans">{item.label}</span>
+                <span className="text-sm font-bold text-white">{item.value}</span>
               </div>
             </div>
           );

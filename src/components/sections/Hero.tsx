@@ -66,13 +66,13 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#capabilities"
-              className="px-7 py-3.5 text-sm font-semibold tracking-wider uppercase bg-[var(--color-brand-accent)] text-white rounded hover:bg-white hover:text-[#0B1728] transition-all duration-300 shadow-lg"
+              className="px-7 py-3.5 text-sm font-bold tracking-wider uppercase bg-[var(--color-brand-accent)] text-white rounded transition-all duration-200 shadow-[0_4px_0_#007a99,0_6px_20px_rgba(0,181,226,0.3)] hover:shadow-[0_2px_0_#007a99,0_4px_12px_rgba(0,181,226,0.2)] hover:translate-y-px active:shadow-none active:translate-y-1"
             >
               Explore Capabilities
             </a>
             <a
               href="#contact"
-              className="px-7 py-3.5 text-sm font-semibold tracking-wider uppercase border border-white/25 text-white rounded hover:bg-white/10 transition-all duration-300"
+              className="px-7 py-3.5 text-sm font-semibold tracking-wider uppercase border border-white/25 text-white rounded hover:bg-white/10 transition-all duration-300 shadow-[0_2px_0_rgba(255,255,255,0.08)]"
             >
               Contact Us
             </a>
@@ -85,7 +85,7 @@ export default function Hero() {
           className="mt-10 pt-6 border-t border-white/10 grid grid-cols-4 gap-6"
         >
           {[
-            { val: "±0.004", unit: "mm", label: "Machining Precision" },
+            { val: "\u00b10.01", unit: "mm", label: "Machining Precision" },
             { val: "500+", unit: "", label: "Components Delivered" },
             { val: "15+", unit: "yrs", label: "Industry Experience" },
             { val: "100%", unit: "", label: "Material Traceability" },
