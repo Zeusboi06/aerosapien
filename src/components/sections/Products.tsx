@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Section from "@/components/Section";
-import { ChevronLeft, ChevronRight, X, ArrowRight, Expand } from "lucide-react";
+import { ChevronLeft, ChevronRight, X, ArrowRight, Expand, ZoomIn } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
