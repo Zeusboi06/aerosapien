@@ -23,7 +23,7 @@ const capabilities = [
     badge: "Sub-Millimetre Accuracy",
     summary: "Micro-tolerance milling & turning for complex 3D aerospace geometries and load-bearing flight hardware.",
     materials: ["Titanium Grade 5 (Ti-6Al-4V)", "Inconel 718", "NCM Steel (EN24/EN36B)", "Aluminum 7075-T6"],
-    tolerance: "±0.01 mm",
+    tolerance: "±0.001 mm",
     caseExample: "LCA Tejas Light Combat Aircraft wing attachment fittings and landing gear components engineered for HAL.",
     image: "/images/products/lca-cnc-assembly.png",
     specs: ["5-Axis Simultaneous", "AS9100D Certified", "Full Traceability"]
@@ -35,7 +35,7 @@ const capabilities = [
     badge: "Lightweight Structural",
     summary: "Advanced multi-axis structural frames engineered for high vibration and extreme G-force environments.",
     materials: ["Titanium Alloy (Ti-6Al-4V)", "Inconel 625/718", "AlSi10Mg Aluminum", "Aerospace Composites"],
-    tolerance: "±0.01 mm",
+    tolerance: "±0.001 mm",
     caseExample: "Regenerative cooling channel nozzles & complex space propulsion frames for Wipro 3D & Intech Additive.",
     image: "/images/products/lca-complex-frame.png",
     specs: ["Topology Optimized", "Vacuum-Rated", "High Strength-to-Weight"]
