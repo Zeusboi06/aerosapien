@@ -1,0 +1,2 @@
+Deploy triggered at: 2026-08-04T14:41:59.866Z
+This file forces Vercel to redeploy.
