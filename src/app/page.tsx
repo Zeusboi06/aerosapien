@@ -13,6 +13,7 @@ import Sustainability from "@/components/sections/Sustainability";
 import Contact from "@/components/sections/Contact";
 import WhyAerosapien from "@/components/sections/WhyAerosapien";
 
+// Last updated: 2026-08-04T20:20:00+05:30
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-white text-slate-900">
