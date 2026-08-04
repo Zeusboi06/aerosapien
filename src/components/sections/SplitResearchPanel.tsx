@@ -19,7 +19,7 @@ const panels = [
     narrative:
       "As an approved defense supplier to Hindustan Aeronautics Limited, Aerosapien delivers high-stress wing fittings, landing gear components, and fuselage assemblies machined from Titanium, Inconel, and NCM steel for the LCA Tejas program.",
     statLabel: "Machining Tolerance",
-    statValue: "±0.004 mm",
+    statValue: "±0.001 mm",
     image: "/images/research/tejas-panel.jpg",
   },
 ];
