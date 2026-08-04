@@ -10,7 +10,7 @@ const hotspots = [
   {
     id: 1,
     title: "5-Axis CNC Flange Interface",
-    spec: "Tolerance: ±0.004 mm | Surface Finish: Ra 0.4 µm",
+    spec: "Tolerance: ±0.001 mm | Surface Finish: Ra 0.4 µm",
     desc: "Machined from solid aircraft-grade Titanium Ti-6Al-4V block. 12-bolt pattern for cryogenic seal.",
   },
   {
