@@ -23,8 +23,8 @@ const logoTiers = [
   {
     title: "Customers in advanced additive manufacturing",
     logos: [
-      { name: "Wipro 3D", src: "/client_logos/Customers in advanced additive manufacturing/wipro_new_logo.png" },
-      { name: "Wipro", src: "/client_logos/Customers in advanced additive manufacturing/wipro-secondary-logo-color-rgb-1-ao4jn934.png" },
+      { name: "Wipro 3D", src: "/client_logos/Customers in advanced additive manufacturing/wipro-secondary-logo-color-rgb-1-ao4jn934.png" },
+      { name: "Wipro", src: "/client_logos/Customers in advanced additive manufacturing/wipro_new_logo.png" },
       { name: "Fracktal", src: "/client_logos/Customers in advanced additive manufacturing/Website-Header_black-1.png.webp" },
       { name: "Intech", src: "/client_logos/Customers in advanced additive manufacturing/intech-iso-logo.png" },
       { name: "Janatics", src: "/client_logos/Customers in advanced additive manufacturing/janatics_logo.png" },
