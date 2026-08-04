@@ -57,7 +57,7 @@ export default function InspectScene({ activeHotspot }: Props) {
                 <div className="bg-[#0a1628]/95 border border-cyan-400/60 text-white px-3 py-2 rounded-lg shadow-2xl backdrop-blur-md whitespace-nowrap">
                   <span className="text-[10px] font-mono text-cyan-400 block font-bold">HOTSPOT 01</span>
                   <span className="text-xs font-bold block mt-0.5">5-Axis CNC Flange Interface</span>
-                  <span className="text-[10px] text-slate-400 block">±0.004 mm | Ra 0.4 µm finish</span>
+                  <span className="text-[10px] text-slate-400 block">±0.001 mm | Ra 0.4 µm finish</span>
                 </div>
               </Html>
             )}
