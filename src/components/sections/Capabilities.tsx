@@ -5,91 +5,92 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Section from "@/components/Section";
 import {
-  Settings,
+  Wrench,
   Plane,
-  Shield,
+  ShieldCheck,
   Rocket,
-  Flame,
-  FlaskConical,
-  Microscope,
+  Gauge,
   Wifi,
+  Microscope,
+  Sparkles,
   ChevronRight,
+  CheckCircle2
 } from "lucide-react";
 
-const capabilities = [
+const capabilitiesCategories = [
   {
-    title: "Precision CNC Machining",
-    description: "Sub-millimetre tolerances up to ±0.001 mm across titanium, Inconel, NCM steel, aluminium, Delrin, and stainless steel alloys.",
-    icon: Settings,
-    tag: "Core",
-    specs: ["5-Axis CNC", "±0.001 mm", "Multi-material"],
-    accent: "#0A2342",
+    title: "Precision CNC Manufacturing",
+    description: "Sub-millimetre tolerances up to ±0.001 mm across titanium Grade 5, Inconel 718, NCM steel, aluminium, and stainless alloys.",
+    icon: Wrench,
+    tag: "5-Axis Machining",
+    specs: ["5-Axis Simultaneous", "±0.001 mm Tolerance", "Multi-Material"],
+    accent: "#00b5e2",
   },
   {
-    title: "Aircraft Structures",
-    description: "Critical load-bearing structural assemblies engineered for commercial and defence aviation at the highest airworthiness standards.",
+    title: "Aerospace Structural Components",
+    description: "Primary load-bearing wing attachment fittings, landing gear shock struts, and fuselage structural frames engineered for airframes.",
     icon: Plane,
-    tag: "Aviation",
-    specs: ["LCA Tejas", "DO-160G", "AS9100D"],
+    tag: "Aero-Structures",
+    specs: ["HAL LCA Tejas", "DO-160G Compliant", "AS9100D Standards"],
     accent: "#1B6CA8",
   },
   {
-    title: "Defence Components",
-    description: "High-stress components designed for extreme military environments — from ground vehicles to guided munitions.",
-    icon: Shield,
-    tag: "Defence",
-    specs: ["MIL-SPEC", "DRDO Approved", "Battle-ready"],
-    accent: "#2C4E6E",
+    title: "Defence Manufacturing",
+    description: "High-stress, mission-critical components built for extreme military environments, tactical platforms, and ground support equipment.",
+    icon: ShieldCheck,
+    tag: "Military Spec",
+    specs: ["MIL-SPEC Standards", "DRDO Verified", "Battle-Ready Quality"],
+    accent: "#0A2342",
   },
   {
-    title: "Space Systems",
-    description: "Lightweight, ultra-durable parts for orbital and sub-orbital missions — vacuum-rated, vibration-tested, and zero-defect.",
+    title: "Flight Hardware",
+    description: "Vacuum-rated, vibration-tested flight hardware including PS4 combustion chamber parts and cryogenic propulsion components.",
     icon: Rocket,
-    tag: "Space",
-    specs: ["Vacuum-rated", "ISRO Supplier", "Lightweight"],
-    accent: "#0A2342",
+    tag: "Space Systems",
+    specs: ["ISRO LPSC Certified", "Gaganyaan Mission", "Vacuum-Rated"],
+    accent: "#00b5e2",
   },
   {
-    title: "Combustion Chambers",
-    description: "Advanced thermal-resistant propulsion assemblies capable of withstanding extreme heat and pressure cycles.",
-    icon: Flame,
-    tag: "Propulsion",
-    specs: ["High-temp alloys", "3000°F rated", "NDE tested"],
+    title: "Technical Specifications",
+    description: "Strict GD&T controlled manufacturing, 100% CMM Coordinate Measuring Machine verification, and complete material batch traceability.",
+    icon: Gauge,
+    tag: "Quality Control",
+    specs: ["CMM 100% Inspected", "GD&T Controlled", "Full Traceability"],
     accent: "#1B6CA8",
-  },
-  {
-    title: "Prototype Development",
-    description: "Rapid engineering cycles from CAD concept to fully functional aerospace prototype — in days, not months.",
-    icon: FlaskConical,
-    tag: "R&D",
-    specs: ["DFM consulting", "First-article", "Fast-turn"],
-    accent: "#2C4E6E",
-  },
-  {
-    title: "Research & Development",
-    description: "Pioneering next-gen materials, manufacturing processes, and surface finishing techniques for aerospace applications.",
-    icon: Microscope,
-    tag: "Innovation",
-    specs: ["Material R&D", "IISc Partner", "IP creation"],
-    accent: "#0A2342",
   },
   {
     title: "UAV Systems",
-    description: "Full structural manufacturing for next-generation unmanned aerial vehicles — from fuselage frames to landing gear.",
+    description: "Lightweight structural airframe assemblies, fin attachment units, T/Y joints, and motor mounts for 200 kg class logistics UAVs.",
     icon: Wifi,
-    tag: "UAV",
-    specs: ["IG Drones", "Composite-ready", "DGCA Aware"],
+    tag: "Unmanned Aviation",
+    specs: ["IG Drones Partner", "Logistics UAV Class", "High Strength/Weight"],
+    accent: "#0A2342",
+  },
+  {
+    title: "Research & Development",
+    description: "Pioneering advanced regenerative cooling channel geometries, thermal protection systems, and high-temperature material research.",
+    icon: Microscope,
+    tag: "Innovation",
+    specs: ["IISc Collaboration", "Propulsion R&D", "IP Creation"],
+    accent: "#00b5e2",
+  },
+  {
+    title: "Custom Engineering Solutions",
+    description: "End-to-end custom manufacturing, Design for Manufacturability (DFM) consulting, rapid prototyping, and reverse engineering.",
+    icon: Sparkles,
+    tag: "Tailored Engineering",
+    specs: ["DFM Optimization", "72-Hr Prototyping", "Turnkey Assemblies"],
     accent: "#1B6CA8",
   },
 ];
 
-const specs = [
-  { label: "Tolerances", value: "±0.001 mm", sub: "Industry-leading precision" },
-  { label: "Materials", value: "12+", sub: "Aerospace-grade alloys" },
-  { label: "Certifications", value: "AS9100D", sub: "ISO 9001:2015 compliant" },
-  { label: "Turnaround", value: "72 hrs", sub: "Prototype to delivery" },
-  { label: "Machine Hours", value: "24/7", sub: "Lights-out manufacturing" },
-  { label: "Quality", value: "Zero-defect", sub: "Full inspection reports" },
+const technicalMetrics = [
+  { label: "Precision Tolerance", value: "±0.001 mm", sub: "Micro-machining standard" },
+  { label: "Aerospace Alloys", value: "12+", sub: "Titanium, Inconel, Aluminium" },
+  { label: "Certifications", value: "AS9100D", sub: "ISO 9001:2015 Compliant" },
+  { label: "Rapid Turnaround", value: "72 hrs", sub: "CAD to Prototype" },
+  { label: "Operational Facility", value: "24/7", sub: "Precision CNC Center" },
+  { label: "Quality Standard", value: "Zero-Defect", sub: "100% CMM Verification" },
 ];
 
 export default function Capabilities() {
@@ -103,12 +104,12 @@ export default function Capabilities() {
       const cards = containerRef.current.querySelectorAll(".cap-card");
       gsap.fromTo(
         cards,
-        { y: 40, opacity: 0 },
+        { y: 35, opacity: 0 },
         {
           y: 0,
           opacity: 1,
           duration: 0.7,
-          stagger: 0.08,
+          stagger: 0.07,
           ease: "power2.out",
           scrollTrigger: {
             trigger: containerRef.current,
@@ -122,12 +123,12 @@ export default function Capabilities() {
       const items = specsRef.current.querySelectorAll(".spec-item");
       gsap.fromTo(
         items,
-        { y: 30, opacity: 0 },
+        { y: 25, opacity: 0 },
         {
           y: 0,
           opacity: 1,
           duration: 0.6,
-          stagger: 0.1,
+          stagger: 0.08,
           ease: "power2.out",
           scrollTrigger: {
             trigger: specsRef.current,
@@ -139,93 +140,104 @@ export default function Capabilities() {
   }, []);
 
   return (
-    <Section id="capabilities" className="bg-[#f8f9fc] relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#0A2342]/3 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#1B6CA8]/4 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2" />
+    <Section id="capabilities" className="bg-[#f8fa08]/0 bg-slate-50 relative overflow-hidden py-20 md:py-28 border-t border-slate-200/80">
+      {/* Subtle Background Glows */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[var(--color-brand-accent)]/5 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[var(--color-deep-navy)]/5 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3" />
       </div>
 
-      {/* Header */}
-      <div className="flex flex-col items-center mb-16 text-center max-w-3xl mx-auto relative">
-        <span className="inline-flex items-center gap-2 text-[#1B6CA8] font-semibold tracking-widest uppercase text-xs mb-4 bg-[#1B6CA8]/8 px-4 py-2 rounded-full border border-[#1B6CA8]/15">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#1B6CA8] animate-pulse" />
-          Core Competencies
+      {/* Section Header */}
+      <div className="flex flex-col items-center mb-16 text-center max-w-3xl mx-auto relative z-10 px-4">
+        <span className="inline-flex items-center gap-2 text-[var(--color-brand-accent)] font-semibold tracking-[0.2em] uppercase text-xs mb-3.5 bg-[var(--color-brand-accent)]/10 px-4 py-1.5 rounded-full border border-[var(--color-brand-accent)]/20">
+          <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-accent)] animate-pulse" />
+          Engineering Excellence
         </span>
-        <h2 className="text-4xl md:text-5xl font-bold text-[#0A2342] leading-tight">
-          Built for Every<br />
-          <span className="text-[#1B6CA8]">Aerospace Challenge</span>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--color-deep-navy)] tracking-tight leading-tight">
+          Capabilities & <span className="text-[var(--color-brand-accent)]">Flight Hardware</span>
         </h2>
-        <p className="mt-5 text-lg text-slate-500 font-sans leading-relaxed max-w-2xl">
-          From micro-precision CNC machining to full-scale UAV assemblies — we deliver
-          engineering excellence across the entire aerospace spectrum.
+        <p className="mt-4 text-base sm:text-lg text-slate-600 font-sans leading-relaxed max-w-2xl">
+          Comprehensive aerospace precision manufacturing, flight-certified hardware engineering, 
+          and advanced industrial production for India&apos;s leading space and defence organizations.
         </p>
       </div>
 
-      {/* Specs Bar */}
+      {/* Engineering Technical Metrics Bar */}
       <div
         ref={specsRef}
-        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-slate-200 rounded-2xl overflow-hidden mb-16 border border-slate-200 shadow-sm"
+        className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-slate-200/80 rounded-2xl overflow-hidden mb-16 border border-slate-200 shadow-sm relative z-10"
       >
-        {specs.map((s, i) => (
-          <div key={i} className="spec-item bg-white px-5 py-5 flex flex-col items-center text-center hover:bg-[#0A2342] group transition-colors duration-300 cursor-default">
-            <span className="text-2xl font-bold text-[#0A2342] group-hover:text-white transition-colors duration-300 font-mono">{s.value}</span>
-            <span className="text-xs font-semibold text-[#1B6CA8] group-hover:text-sky-200 mt-1 transition-colors duration-300 uppercase tracking-wider">{s.label}</span>
-            <span className="text-[11px] text-slate-400 group-hover:text-slate-300 mt-0.5 transition-colors duration-300">{s.sub}</span>
+        {technicalMetrics.map((metric, i) => (
+          <div
+            key={i}
+            className="spec-item bg-white px-4 py-5 flex flex-col items-center text-center hover:bg-[var(--color-deep-navy)] group transition-colors duration-300 cursor-default"
+          >
+            <span className="text-xl sm:text-2xl font-bold text-[var(--color-deep-navy)] group-hover:text-white transition-colors duration-300 font-mono tracking-tight">
+              {metric.value}
+            </span>
+            <span className="text-[11px] font-bold text-[var(--color-brand-accent)] group-hover:text-sky-300 mt-1 transition-colors duration-300 uppercase tracking-wider">
+              {metric.label}
+            </span>
+            <span className="text-[10px] text-slate-400 group-hover:text-slate-300 mt-0.5 transition-colors duration-300 font-sans">
+              {metric.sub}
+            </span>
           </div>
         ))}
       </div>
 
-      {/* Capabilities Grid */}
+      {/* 8 Category Capabilities Grid */}
       <div
         ref={containerRef}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
+        className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10 px-4"
       >
-        {capabilities.map((cap, index) => {
+        {capabilitiesCategories.map((cap, index) => {
           const Icon = cap.icon;
           return (
             <div
               key={index}
-              className="cap-card group relative bg-white border border-slate-100 rounded-2xl p-6 hover:border-[#1B6CA8]/30 hover:shadow-lg hover:shadow-[#0A2342]/8 transition-all duration-300 cursor-default overflow-hidden"
+              className="cap-card group relative bg-white border border-slate-200/80 rounded-2xl p-6 hover:border-[var(--color-brand-accent)]/40 hover:shadow-xl hover:shadow-[var(--color-deep-navy)]/10 transition-all duration-300 flex flex-col justify-between overflow-hidden"
             >
-              {/* Top accent line */}
-              <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#0A2342] to-[#1B6CA8] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              {/* Top Accent Gradient Bar */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[var(--color-deep-navy)] to-[var(--color-brand-accent)] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-              {/* Tag */}
-              <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-[#1B6CA8] bg-[#1B6CA8]/8 px-2 py-1 rounded-md mb-4">
-                {cap.tag}
-              </span>
-
-              {/* Icon */}
-              <div className="w-11 h-11 rounded-xl bg-[#f0f4f8] flex items-center justify-center text-[#0A2342] group-hover:bg-[#0A2342] group-hover:text-white transition-all duration-300 mb-4">
-                <Icon className="w-5 h-5" />
-              </div>
-
-              {/* Title */}
-              <h3 className="text-base font-bold text-[#0A2342] mb-2 leading-snug group-hover:text-[#1B6CA8] transition-colors duration-300">
-                {cap.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-sm text-slate-500 font-sans leading-relaxed mb-4">
-                {cap.description}
-              </p>
-
-              {/* Spec pills */}
-              <div className="flex flex-wrap gap-1.5 mt-auto">
-                {cap.specs.map((s, si) => (
-                  <span
-                    key={si}
-                    className="text-[10px] font-semibold text-slate-500 bg-slate-50 border border-slate-100 px-2 py-0.5 rounded-full group-hover:border-[#1B6CA8]/20 group-hover:text-[#1B6CA8] transition-colors duration-200"
-                  >
-                    {s}
+              <div>
+                {/* Header Tag & Icon */}
+                <div className="flex items-center justify-between mb-4">
+                  <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-[var(--color-brand-accent)] bg-[var(--color-brand-accent)]/10 px-2.5 py-1 rounded-md border border-[var(--color-brand-accent)]/20">
+                    {cap.tag}
                   </span>
-                ))}
+                  <div className="w-10 h-10 rounded-xl bg-slate-100/80 flex items-center justify-center text-[var(--color-deep-navy)] group-hover:bg-[var(--color-deep-navy)] group-hover:text-white transition-all duration-300 shadow-inner">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                </div>
+
+                {/* Title */}
+                <h3 className="text-lg font-bold text-[var(--color-deep-navy)] mb-2.5 leading-snug group-hover:text-[var(--color-brand-accent)] transition-colors duration-300 tracking-tight">
+                  {cap.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed mb-5">
+                  {cap.description}
+                </p>
               </div>
 
-              {/* Hover arrow */}
-              <div className="absolute bottom-5 right-5 opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300">
-                <ChevronRight className="w-4 h-4 text-[#1B6CA8]" />
+              <div>
+                {/* Specifications List */}
+                <div className="space-y-1.5 pt-3 border-t border-slate-100">
+                  {cap.specs.map((spec, si) => (
+                    <div key={si} className="flex items-center text-[11px] font-medium text-slate-600 font-sans">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[var(--color-brand-accent)] mr-2 shrink-0 opacity-90" />
+                      <span>{spec}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Subtle Action Link */}
+                <div className="mt-5 pt-3 flex items-center justify-between text-xs font-bold text-[var(--color-deep-navy)] group-hover:text-[var(--color-brand-accent)] transition-colors duration-200">
+                  <span>Learn Specs</span>
+                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                </div>
               </div>
             </div>
           );
