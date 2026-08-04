@@ -8,7 +8,7 @@ import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 
 const qualityPoints = [
-  "Advanced CNC Machining to ±0.004 mm",
+  "Advanced 5-Axis CNC Machining to ±0.001 mm",
   "Precision CMM Inspection & Verification",
   "End-to-End Material Traceability",
   "AS9100D Compliant Quality Assurance",
