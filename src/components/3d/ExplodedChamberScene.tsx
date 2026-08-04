@@ -46,7 +46,7 @@ export default function ExplodedChamberScene({ explodeFactor = 0 }: ExplodedCham
                 <div className="bg-[#0a1628]/95 border border-cyan-400/60 text-white px-3 py-2 rounded-lg shadow-2xl backdrop-blur-md whitespace-nowrap animate-in fade-in">
                   <span className="text-[10px] font-mono text-cyan-400 block font-bold">PART 01</span>
                   <span className="text-xs font-bold block mt-0.5">Titanium Outer Cooling Jacket</span>
-                  <span className="text-[10px] text-slate-400 block font-sans">Wall: 1.5mm | ±0.004mm tolerance</span>
+                  <span className="text-[10px] text-slate-400 block font-sans">Wall: 1.5mm | ±0.001mm tolerance</span>
                 </div>
               </Html>
             )}
