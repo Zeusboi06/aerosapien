@@ -6,13 +6,13 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#capabilities", label: "Capabilities" },
-  { href: "#products", label: "Products" },
-  { href: "#timeline", label: "Heritage" },
-  { href: "#clients", label: "Clients" },
-  { href: "#research", label: "R&D" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#capabilities", label: "Capabilities" },
+  { href: "/products", label: "Products" },
+  { href: "/#timeline", label: "Heritage" },
+  { href: "/clients", label: "Clients" },
+  { href: "/#research", label: "R&D" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -43,10 +43,10 @@ export default function Navbar() {
             className="flex items-center group"
           >
             <Image
-              src="/brand/aerosapien-logo-full.png"
+              src="/brand/main_logo.png"
               alt="Aerosapien"
-              width={180}
-              height={44}
+              width={220}
+              height={54}
               className={`object-contain transition-all duration-300 ${scrolled ? "" : "drop-shadow-[0_1px_8px_rgba(255,255,255,0.4)]"}`}
               unoptimized
             />
@@ -66,7 +66,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="#contact"
+              href="/#contact"
               className="ml-2 px-5 py-2 text-[11px] font-bold tracking-wider uppercase bg-[var(--color-brand-accent)] text-white rounded transition-all duration-200 shadow-[0_3px_0_#007a99,0_5px_12px_rgba(0,181,226,0.25)] hover:shadow-[0_2px_0_#007a99] hover:translate-y-px active:shadow-none active:translate-y-0.5"
             >
               Get a Quote
