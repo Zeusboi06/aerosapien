@@ -8,22 +8,22 @@ import Image from "next/image";
 
 const shopfloorImages = [
   {
-    src: "/images/capabilities/cnc-machining.jpg",
+    src: "/images/factory/cnc_machining_center.jpg",
     title: "5-Axis CNC Machining Center",
     category: "Precision Manufacturing",
   },
   {
-    src: "/images/capabilities/cmm-metrology.jpg",
+    src: "/images/factory/metal_3d_printing.jpg",
     title: "Metal 3D Printing Post-Processing",
     category: "Additive Manufacturing",
   },
   {
-    src: "/images/capabilities/combustion-propulsion.jpg",
+    src: "/images/factory/cmm_metrology_inspection.jpg",
     title: "CMM Metrology Inspection",
     category: "Quality Assurance",
   },
   {
-    src: "/images/factory/turbine-assembly.jpg",
+    src: "/images/factory/turbine_propulsion_assembly.jpg",
     title: "Turbine & Propulsion Sub-Assembly",
     category: "Flight Hardware",
   },
@@ -80,10 +80,10 @@ export default function FactoryGallery() {
               src={img.src}
               alt={img.title}
               fill
-              className="object-cover group-hover:scale-110 transition-transform duration-700"
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
               unoptimized
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent group-hover:from-black/95 transition-colors duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
 
             <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
               <span className="text-[11px] font-mono text-[var(--color-brand-accent)] tracking-wider uppercase block mb-1">
