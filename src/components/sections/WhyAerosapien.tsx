@@ -12,7 +12,7 @@ const whyPoints = [
   { label: "GD&T Based Precision Control", sub: "Aerospace-Grade Materials & 100% CMM Verification" },
   { label: "Titanium · Inconel · Aluminium · Steel", sub: "Multi-material high-temperature machining capabilities" },
   { label: "Mission-Critical Flight Hardware", sub: "LCA Tejas, ISRO Space Missions & UAV Structural Assemblies" },
-  { label: "100% Quality Inspection & Traceability", sub: "AS9100D & ISO 9001:2015 Compliant Quality Assurance" },
+  { label: "100% Quality Inspection & Traceability", sub: "ISO 9001:2015 Compliant Quality Assurance" },
   { label: "Indigenous Manufacturing Partner", sub: "Supporting Atmanirbhar Bharat in Aerospace & Defence" },
 ];
 
@@ -60,15 +60,15 @@ export default function WhyAerosapien() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center max-w-7xl mx-auto px-4">
         
         {/* LEFT: Premium High-Precision CNC Aerospace Machining Facility Image */}
-        <div className="lg:col-span-5 relative rounded-2xl overflow-hidden shadow-2xl border border-slate-300 group h-[420px] sm:h-[480px] lg:h-[540px]">
+        <div className="lg:col-span-5 relative rounded-2xl overflow-hidden shadow-2xl border border-slate-300 group h-[420px] sm:h-[480px] lg:h-[540px] bg-[#070D18] p-6 flex items-center justify-center">
           <Image
-            src="/images/capabilities/cnc-machining.jpg"
-            alt="Aerosapien — Advanced 5-Axis CNC Precision Machining Facility"
+            src="/images/factory/wing_structure_inspection.jpg"
+            alt="Aerosapien — Uncompromising Precision Aerospace Manufacturing Standards"
             fill
             className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
             unoptimized
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-deep-navy)]/90 via-[var(--color-deep-navy)]/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-deep-navy)]/80 via-transparent to-transparent pointer-events-none" />
 
           {/* Floating Facility Badge */}
           <div className="absolute top-4 left-4">
@@ -83,7 +83,7 @@ export default function WhyAerosapien() {
             <div className="grid grid-cols-3 gap-2.5">
               {[
                 { val: "ISO 9001", label: "Certified" },
-                { val: "AS9100D", label: "Quality Standards" },
+                { val: "ISO 9001:2015", label: "Quality Standards" },
                 { val: "±0.001mm", label: "Precision" },
               ].map((s, i) => (
                 <div key={i} className="bg-slate-950/80 backdrop-blur-md border border-white/15 rounded-xl p-3 text-center">
