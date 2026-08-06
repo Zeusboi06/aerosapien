@@ -2,25 +2,31 @@
 
 import Section from "@/components/Section";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const panels = [
   {
-    category: "Space Exploration Narrative",
-    title: "Contributing to India's Human Spaceflight — Gaganyaan",
+    category: "Space Exploration Mission Heritage",
+    title: "Precision Manufacturing for ISRO LPSC & Gaganyaan",
     narrative:
-      "Aerosapien manufactures critical structural sub-assemblies and propulsion components for ISRO's Gaganyaan mission and Cryogenic Upper Stage engines. Operating under extreme pressure and thermal gradients, every part undergoes 100% CMM inspection and material certification.",
-    statLabel: "ISRO Certified Sub-Assemblies",
-    statValue: "100% Flight-Traceable",
-    image: "/images/capabilities/additive-manufacturing.jpg",
+      "AEROSAPIEN contributes precision-engineered liquid engine hardware, PS4 combustion chamber components, and cryogenic propulsion assemblies supporting ISRO's Liquid Propulsion Systems Centre (LPSC) and the Gaganyaan Human Spaceflight Programme.",
+    statLabel: "ISRO LPSC Certified Assemblies",
+    statValue: "100% Vacuum Rated",
+    image: "/images/posters/isro_lpsc_poster.jpg",
+    buttonLabel: "Explore ISRO Space Projects",
+    buttonLink: "/clients?tab=isro",
   },
   {
-    category: "Defense Aircraft Heritage",
-    title: "Precision Flight Components for HAL LCA Tejas",
+    category: "Defense Aircraft Flight Heritage",
+    title: "Class-1 Structural Components for HAL LCA Tejas",
     narrative:
-      "As an approved defense supplier to Hindustan Aeronautics Limited, Aerosapien delivers high-stress wing fittings, landing gear components, and fuselage assemblies machined from Titanium, Inconel, and NCM steel for the LCA Tejas program.",
-    statLabel: "Machining Tolerance",
+      "AEROSAPIEN manufactures Class-1 critical structural aerospace components for the HAL LCA TEJAS Mk1A indigenous fighter aircraft programme, including titanium landing gear fittings, wing attachment components, and fuselage structural panels.",
+    statLabel: "Machining Precision",
     statValue: "±0.001 mm",
-    image: "/images/research/tejas-panel.jpg",
+    image: "/images/posters/hal_tejas_poster.jpg",
+    buttonLabel: "Explore HAL Tejas Projects",
+    buttonLink: "/clients?tab=hal",
   },
 ];
 
@@ -56,13 +62,23 @@ export default function SplitResearchPanel() {
                 {panel.narrative}
               </p>
 
-              <div className="inline-flex items-center space-x-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
-                <span className="text-2xl font-bold text-[var(--color-brand-primary)] font-mono">
-                  {panel.statValue}
-                </span>
-                <span className="text-xs font-sans text-slate-500 uppercase tracking-wider font-semibold border-l border-slate-300 pl-4">
-                  {panel.statLabel}
-                </span>
+              <div className="flex flex-wrap items-center gap-6">
+                <div className="inline-flex items-center space-x-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                  <span className="text-2xl font-bold text-[var(--color-brand-primary)] font-mono">
+                    {panel.statValue}
+                  </span>
+                  <span className="text-xs font-sans text-slate-500 uppercase tracking-wider font-semibold border-l border-slate-300 pl-4">
+                    {panel.statLabel}
+                  </span>
+                </div>
+
+                <Link
+                  href={panel.buttonLink}
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#00b5e2] text-white font-bold text-xs uppercase tracking-wider shadow-[0_0_15px_rgba(0,181,226,0.3)] hover:scale-105 transition-all duration-300"
+                >
+                  <span>{panel.buttonLabel}</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
 
