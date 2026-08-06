@@ -60,10 +60,10 @@ export default function LoadingSequence() {
               transition={{ duration: 0.5 }}
             >
               <Image
-                src="/brand/aerosapien-new-logo.png"
+                src="/brand/main_logo.png"
                 alt="Aerosapien"
-                width={200}
-                height={136}
+                width={260}
+                height={70}
                 className="object-contain"
                 priority
                 unoptimized
