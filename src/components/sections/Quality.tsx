@@ -11,7 +11,7 @@ const qualityPoints = [
   "Advanced 5-Axis CNC Machining to ±0.001 mm",
   "Precision CMM Inspection & Verification",
   "End-to-End Material Traceability",
-  "AS9100D Compliant Quality Assurance",
+  "ISO 9001:2015 Compliant Quality Assurance",
   "Global Engineering & Safety Standards",
 ];
 
@@ -44,16 +44,16 @@ export default function Quality() {
   return (
     <Section id="quality" ref={containerRef} className="bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        {/* Left: Image — using real Aerosapien CMM/machining photo */}
-        <div className="relative h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl">
+        {/* Left: Image — 5th image: CMM Quality Inspection with PASS readout */}
+        <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-slate-900 border border-slate-200 group">
           <Image
-            src="/images/capabilities/cmm-metrology.jpg"
-            alt="CMM Precision Inspection"
+            src="/images/quality/cmm_quality_inspection_standards.jpg"
+            alt="Aerosapien CMM Precision Quality Inspection & AS9100 Standards"
             fill
-            className="object-cover"
+            className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
             unoptimized
           />
-          <div className="absolute inset-0 bg-[var(--color-deep-navy)]/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-deep-navy)]/60 via-transparent to-transparent" />
 
           {/* Scanning line effect */}
           <div
@@ -63,10 +63,10 @@ export default function Quality() {
             }}
           />
 
-          <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm border border-[var(--color-brand-accent)]/30 px-4 py-2 rounded">
+          <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md border border-[var(--color-brand-accent)]/30 px-4 py-2 rounded-lg">
             <span className="text-xs font-mono text-[var(--color-brand-accent)] tracking-wider uppercase flex items-center space-x-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-accent)] animate-pulse" />
-              <span>Auto-Inspection Active</span>
+              <span>Auto CMM Metrology Verified</span>
             </span>
           </div>
         </div>
@@ -85,11 +85,11 @@ export default function Quality() {
             international standards before it reaches the assembly line.
           </p>
 
-          <ul className="space-y-3">
+          <ul className="space-y-3.5">
             {qualityPoints.map((point, index) => (
               <li key={index} className="quality-item flex items-center space-x-3">
                 <CheckCircle2 className="w-5 h-5 text-[var(--color-brand-accent)] flex-shrink-0" />
-                <span className="text-slate-700 font-medium font-sans text-sm">{point}</span>
+                <span className="text-slate-700 font-semibold font-sans text-sm md:text-base">{point}</span>
               </li>
             ))}
           </ul>
