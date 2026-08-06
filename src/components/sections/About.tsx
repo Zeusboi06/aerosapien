@@ -99,7 +99,7 @@ export default function About() {
             <div className="bg-slate-50 border border-slate-100 rounded-xl p-4 flex flex-col justify-between">
               <div className="flex items-center gap-2 mb-1 text-[var(--color-brand-accent)]">
                 <ShieldCheck className="w-4 h-4 shrink-0" />
-                <span className="text-xs font-bold uppercase tracking-wider text-[var(--color-deep-navy)]">AS9100D</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-[var(--color-deep-navy)]">Aerospace Standards</span>
               </div>
               <p className="text-xs text-slate-500 font-sans">Aerospace-grade manufacturing standards</p>
             </div>
@@ -139,7 +139,7 @@ export default function About() {
               {/* Portrait Image */}
               <div className="relative w-full h-80 sm:h-96 bg-slate-100">
                 <Image
-                  src="/brand/founder-portrait-clean.jpg"
+                  src="/brand/founder_v2.png"
                   alt="Sivaram Rajamanickam — Founder & Managing Director, Aerosapien"
                   fill
                   className="object-cover object-top"
