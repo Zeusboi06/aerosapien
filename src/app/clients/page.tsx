@@ -19,15 +19,15 @@ const tabs = [
 ];
 
 const additionalClients = [
-  { name: "Bellatrix Aerospace", desc: "Space Propulsion Systems & Thruster Components", logo: "/client_logos/new/bellatrix.png" },
-  { name: "SkyX Aerospace", desc: "High-Altitude Tactical UAV Airframe Hardware", logo: "/client_logos/new/ig_drones.png" },
-  { name: "Textron Aviation", desc: "Aerospace Structural Components & Assemblies", logo: "/client_logos/aeronautical_clients/Textron_Aviation_logo_2018.svg.webp" },
-  { name: "Recaero", desc: "Airbus & Boeing Supply Chain Precision Hardware", logo: "/client_logos/aeronautical_clients/recaero-logo.svg" },
-  { name: "IISc Bengaluru", desc: "Advanced Propulsion & Materials Research", logo: "/client_logos/rd_clients/fSID-logo-img.png" },
-  { name: "Wipro 3D", desc: "Additive Manufacturing & Metal 3D Printing", logo: "/client_logos/additive_clients/wipro-3d-logo.png" },
-  { name: "Wipro", desc: "Robotics & Industrial Automation Systems", logo: "/client_logos/rd_clients/wipro-logo.png" },
-  { name: "Wipro PARI", desc: "Robotics & Automation Integration Solutions", logo: "/client_logos/rd_clients/wipro-pari-logo.png" },
-  { name: "Janatics", desc: "High Precision Pneumatic & Control Hardware", logo: "/client_logos/additive_clients/janatics_logo.png" }
+  { name: "Bellatrix Aerospace", desc: "Space Propulsion Systems & Thruster Components", logo: "/client_logos/new/bellatrix.png?v=3" },
+  { name: "SkyX Aerospace", desc: "High-Altitude Tactical UAV Airframe Hardware", logo: "/client_logos/new/ig_drones.png?v=3" },
+  { name: "Textron Aviation", desc: "Aerospace Structural Components & Assemblies", logo: "/client_logos/aeronautical_clients/Textron_Aviation_logo_2018.svg.webp?v=3" },
+  { name: "Recaero", desc: "Airbus & Boeing Supply Chain Precision Hardware", logo: "/client_logos/aeronautical_clients/recaero-logo.svg?v=3" },
+  { name: "IISc Bengaluru", desc: "Advanced Propulsion & Materials Research", logo: "/client_logos/rd_clients/fSID-logo-img.png?v=3" },
+  { name: "Wipro 3D", desc: "Additive Manufacturing & Metal 3D Printing", logo: "/client_logos/additive_clients/wipro-3d-logo.png?v=3" },
+  { name: "Wipro", desc: "Robotics & Industrial Automation Systems", logo: "/client_logos/rd_clients/wipro-logo.png?v=3" },
+  { name: "Wipro PARI", desc: "Robotics & Automation Integration Solutions", logo: "/client_logos/rd_clients/wipro-pari-logo.png?v=3" },
+  { name: "Janatics", desc: "High Precision Pneumatic & Control Hardware", logo: "/client_logos/additive_clients/janatics_logo.png?v=3" }
 ];
 
 function ClientsContent() {
