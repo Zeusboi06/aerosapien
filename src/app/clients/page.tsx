@@ -21,12 +21,12 @@ const tabs = [
 const additionalClients = [
   { name: "Bellatrix Aerospace", desc: "Space Propulsion Systems & Thruster Components", logo: "/client_logos/new/bellatrix.png" },
   { name: "SkyX Aerospace", desc: "High-Altitude Tactical UAV Airframe Hardware", logo: "/client_logos/new/ig_drones.png" },
-  { name: "Textron Aviation", desc: "Aerospace Structural Components & Assemblies", logo: "/client_logos/aerosapien esteemed aeuronotical customers/Textron_Aviation_logo_2018.svg.webp" },
-  { name: "Recaero", desc: "Airbus & Boeing Supply Chain Precision Hardware", logo: "/client_logos/aerosapien esteemed aeuronotical customers/recaero-logo.svg" },
-  { name: "IISc Bengaluru", desc: "Advanced Propulsion & Materials Research", logo: "/client_logos/R and D customers/fSID-logo-img.png" },
-  { name: "Wipro 3D", desc: "Additive Manufacturing & Metal 3D Printing", logo: "/client_logos/Customers in advanced additive manufacturing/wipro_new_logo.png" },
-  { name: "Wipro PARI", desc: "Robotics & Industrial Automation Systems", logo: "/client_logos/R and D customers/wipro-pari-new-logo.png" },
-  { name: "Janatics", desc: "High Precision Pneumatic & Control Hardware", logo: "/client_logos/Customers in advanced additive manufacturing/janatics_logo.png" }
+  { name: "Textron Aviation", desc: "Aerospace Structural Components & Assemblies", logo: "/client_logos/aeronautical_clients/Textron_Aviation_logo_2018.svg.webp" },
+  { name: "Recaero", desc: "Airbus & Boeing Supply Chain Precision Hardware", logo: "/client_logos/aeronautical_clients/recaero-logo.svg" },
+  { name: "IISc Bengaluru", desc: "Advanced Propulsion & Materials Research", logo: "/client_logos/rd_clients/fSID-logo-img.png" },
+  { name: "Wipro 3D", desc: "Additive Manufacturing & Metal 3D Printing", logo: "/client_logos/additive_clients/wipro_new_logo.png" },
+  { name: "Wipro PARI", desc: "Robotics & Industrial Automation Systems", logo: "/client_logos/rd_clients/wipro-pari-new-logo.png" },
+  { name: "Janatics", desc: "High Precision Pneumatic & Control Hardware", logo: "/client_logos/additive_clients/janatics_logo.png" }
 ];
 
 function ClientsContent() {
