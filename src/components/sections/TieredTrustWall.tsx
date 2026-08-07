@@ -14,10 +14,10 @@ const logoTiers = [
     logos: [
       { name: "ISRO", src: "/client_logos/new/isro.png" },
       { name: "HAL", src: "/client_logos/aeronautical_clients/Hindustan_Aeronautics_Limited_Logo.png" },
-      { name: "Astrobase", src: "/client_logos/new/astrobase.png" },
-      { name: "Bellatrix", src: "/client_logos/new/bellatrix.png" },
+      { name: "Astrobase", src: "/client_logos/new/astrobase.png", zoomClass: "p-2" },
+      { name: "Bellatrix", src: "/client_logos/new/bellatrix.png", invert: true },
       { name: "Textron", src: "/client_logos/aeronautical_clients/Textron_Aviation_logo_2018.svg.webp" },
-      { name: "Recaero", src: "/client_logos/aeronautical_clients/recaero-logo.svg" },
+      { name: "Recaero", src: "/client_logos/aeronautical_clients/recaero-logo.svg", zoomClass: "p-2.5" },
       { name: "IG Drones", src: "/client_logos/new/ig_drones.png" },
       { name: "LPSC ISRO", src: "/client_logos/aeronautical_clients/Liquid_Propulsion_Systems_Centre_Logo.png" }
     ],
@@ -109,14 +109,14 @@ export default function TieredTrustWall() {
                     className="trust-card group flex flex-col items-center justify-center"
                   >
                     <div
-                      className="relative w-32 h-32 md:w-36 md:h-36 flex items-center justify-center p-4 rounded-full bg-white/20 backdrop-blur-lg border border-white/30 shadow-[0_8px_32px_0_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-105 hover:-translate-y-1.5 hover:shadow-[0_0_30px_rgba(0,181,226,0.5)] hover:border-[#00b5e2]/80"
+                      className={`relative w-32 h-32 md:w-36 md:h-36 flex items-center justify-center rounded-full bg-gradient-to-tr from-white/25 via-white/10 to-white/30 backdrop-blur-xl border border-white/45 shadow-[inset_0_2px_6px_rgba(255,255,255,0.45),_0_8px_32px_rgba(0,0,0,0.35)] transition-all duration-300 hover:scale-105 hover:-translate-y-1.5 hover:shadow-[inset_0_2px_6px_rgba(255,255,255,0.55),_0_0_35px_rgba(0,181,226,0.6)] hover:border-[#00b5e2]/80 cursor-pointer ${logo.zoomClass || 'p-4'}`}
                     >
                       <Image
                         src={logo.src}
                         alt={logo.name}
                         width={120}
                         height={120}
-                        className="object-contain w-full h-full filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.2)] transition-transform duration-300 group-hover:scale-110"
+                        className={`object-contain w-full h-full filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.2)] transition-transform duration-300 group-hover:scale-110 ${logo.invert ? 'brightness-0 invert' : ''}`}
                         unoptimized
                       />
                     </div>
