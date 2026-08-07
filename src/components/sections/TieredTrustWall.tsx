@@ -117,7 +117,7 @@ export default function TieredTrustWall() {
                         alt={logo.name}
                         width={120}
                         height={120}
-                        className={`object-contain w-full h-full filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.2)] transition-transform duration-300 group-hover:scale-110 ${logo.invert ? 'brightness-0 invert' : ''}`}
+                        className="object-contain w-full h-full filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.2)] transition-transform duration-300 group-hover:scale-110"
                         unoptimized
                       />
                     </div>
