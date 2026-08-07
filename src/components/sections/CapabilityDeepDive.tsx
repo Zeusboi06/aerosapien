@@ -26,7 +26,7 @@ const capabilities = [
     tolerance: "±0.001 mm",
     caseExample: "LCA Tejas Light Combat Aircraft wing attachment fittings and landing gear components engineered for HAL.",
     image: "/images/products/lca-cnc-assembly.png",
-    specs: ["5-Axis Simultaneous", "AS9100D Certified", "Full Traceability"]
+    specs: ["5-Axis Simultaneous", "ISO 9001:2015 Certified", "Full Traceability"]
   },
   {
     id: "additive",
@@ -108,7 +108,7 @@ export default function CapabilityDeepDive() {
           Technical Specifications & Engineering
         </span>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 tracking-tight text-white">
-          Capabilities & <span className="text-[#00b5e2]">Flight Hardware</span>
+          Flight Hardware & <span className="text-[#00b5e2]">Critical Systems Showcase</span>
         </h2>
         <p className="text-slate-400 text-sm md:text-base mt-4 font-sans max-w-2xl mx-auto leading-relaxed">
           Explore our core manufacturing disciplines, real flight-ready components, 
@@ -146,7 +146,7 @@ export default function CapabilityDeepDive() {
             
             {/* Left Image Column */}
             <div className="lg:col-span-5 flex flex-col items-center justify-center">
-              <div className="relative w-full aspect-square max-w-[360px] bg-white/95 rounded-2xl p-6 border border-slate-700/50 shadow-xl flex items-center justify-center group overflow-hidden">
+              <div className="relative w-full aspect-square max-w-[360px] bg-transparent rounded-2xl p-6 border border-transparent  flex items-center justify-center group overflow-hidden">
                 <Image
                   src={selectedCap.image}
                   alt={selectedCap.title}
@@ -210,7 +210,7 @@ export default function CapabilityDeepDive() {
                     </span>
                   </div>
                   <p className="text-[11px] text-slate-400 mt-3 font-sans">
-                    Validated via CMM Coordinate Measuring & AS9100D standards.
+                    Validated via CMM Coordinate Measuring & ISO 9001:2015 standards.
                   </p>
                 </div>
               </div>
