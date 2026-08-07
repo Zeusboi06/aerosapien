@@ -43,7 +43,7 @@ export default function Navbar() {
             className="flex items-center group"
           >
             <Image
-              src="/brand/main_logo.png"
+              src={scrolled ? "/brand/main_logo.png" : "/brand/main_logo_white.png"}
               alt="Aerosapien"
               width={220}
               height={54}
