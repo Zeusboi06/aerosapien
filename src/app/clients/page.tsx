@@ -136,11 +136,9 @@ function ClientsContent() {
             const isWhiteBg = i % 2 === 0;
 
             return (
-              <div key={i} className="bg-slate-900/60 border border-slate-800 rounded-xl p-5 flex flex-col items-center justify-center text-center hover:border-slate-700 hover:bg-slate-900 transition-all">
-                <div className={`w-20 h-20 rounded-xl flex items-center justify-center p-3 mb-3 shadow-md border transition-all duration-300 ${
-                  isWhiteBg ? "bg-white border-slate-200" : "bg-[#0B1728] border-slate-800"
-                }`}>
-                  <Image src={client.logo} alt={client.name} width={70} height={70} className="object-contain w-full h-full" unoptimized />
+              <div key={i} className="group bg-slate-900/60 border border-slate-800 rounded-xl p-5 flex flex-col items-center justify-center text-center hover:border-slate-700 hover:bg-slate-900 transition-all">
+                <div className="w-20 h-20 rounded-full flex items-center justify-center p-3.5 mb-3 bg-white/90 backdrop-blur-sm border border-white/20 shadow-md transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(0,181,226,0.45)] group-hover:border-[#00b5e2]/80">
+                  <Image src={client.logo} alt={client.name} width={70} height={70} className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105" unoptimized />
                 </div>
                 <h3 className="font-bold text-sm text-slate-200">{client.name}</h3>
                 <p className="text-xs text-slate-400 mt-1 font-sans">{client.desc}</p>
