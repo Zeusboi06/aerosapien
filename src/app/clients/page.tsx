@@ -25,7 +25,7 @@ const additionalClients = [
   { name: "Recaero", desc: "Airbus & Boeing Supply Chain Precision Hardware", logo: "/client_logos/aeronautical_clients/recaero-logo.svg" },
   { name: "IISc Bengaluru", desc: "Advanced Propulsion & Materials Research", logo: "/client_logos/rd_clients/fSID-logo-img.png" },
   { name: "Wipro 3D", desc: "Additive Manufacturing & Metal 3D Printing", logo: "/client_logos/additive_clients/wipro_new_logo.png" },
-  { name: "Wipro PARI", desc: "Robotics & Industrial Automation Systems", logo: "/client_logos/rd_clients/wipro-pari-new-logo.png" },
+  { name: "Wipro", desc: "Robotics & Industrial Automation Systems", logo: "/client_logos/rd_clients/wipro-pari-new-logo.png" },
   { name: "Janatics", desc: "High Precision Pneumatic & Control Hardware", logo: "/client_logos/additive_clients/janatics_logo.png" }
 ];
 
