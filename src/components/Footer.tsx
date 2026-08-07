@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="md:col-span-2 space-y-5">
             <Link href="/" className="inline-block group mb-2">
               <Image
-                src="/brand/main_logo.png"
+                src="/brand/main_logo_white.png"
                 alt="Aerosapien Logo"
                 width={230}
                 height={56}
