@@ -29,7 +29,7 @@ const logoTiers = [
       { name: "Wipro 3D", src: "/client_logos/additive_clients/wipro_new_logo.png" },
       { name: "Intech Additive", src: "/client_logos/additive_clients/intech-iso-logo.png" },
       { name: "IISc Bengaluru", src: "/client_logos/rd_clients/fSID-logo-img.png" },
-      { name: "Wipro PARI", src: "/client_logos/rd_clients/wipro-pari-new-logo.png" },
+      { name: "Wipro", src: "/client_logos/rd_clients/wipro-pari-new-logo.png" },
     ],
   },
 ];
