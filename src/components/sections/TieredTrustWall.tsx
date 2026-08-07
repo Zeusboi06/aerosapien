@@ -14,10 +14,10 @@ const logoTiers = [
     logos: [
       { name: "ISRO", src: "/client_logos/new/isro.png" },
       { name: "HAL", src: "/client_logos/aeronautical_clients/Hindustan_Aeronautics_Limited_Logo.png" },
-      { name: "Astrobase", src: "/client_logos/new/astrobase.png", zoomClass: "p-2" },
-      { name: "Bellatrix", src: "/client_logos/new/bellatrix.png", invert: true },
+      { name: "Astrobase", src: "/client_logos/new/astrobase.png", zoomClass: "p-1.5" },
+      { name: "Bellatrix", src: "/client_logos/new/bellatrix.png", zoomClass: "p-1.5" },
       { name: "Textron", src: "/client_logos/aeronautical_clients/Textron_Aviation_logo_2018.svg.webp" },
-      { name: "Recaero", src: "/client_logos/aeronautical_clients/recaero-logo.svg", zoomClass: "p-2.5" },
+      { name: "Recaero", src: "/client_logos/aeronautical_clients/recaero-logo.svg", zoomClass: "p-2" },
       { name: "IG Drones", src: "/client_logos/new/ig_drones.png" },
       { name: "LPSC ISRO", src: "/client_logos/aeronautical_clients/Liquid_Propulsion_Systems_Centre_Logo.png" }
     ],
