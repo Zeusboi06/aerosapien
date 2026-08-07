@@ -25,7 +25,7 @@ const capabilities = [
     materials: ["Titanium Grade 5 (Ti-6Al-4V)", "Inconel 718", "NCM Steel (EN24/EN36B)", "Aluminum 7075-T6"],
     tolerance: "±0.001 mm",
     caseExample: "LCA Tejas Light Combat Aircraft wing attachment fittings and landing gear components engineered for HAL.",
-    image: "/images/products/lca-cnc-assembly.png",
+    image: "/images/products/lca-part-clean.png",
     specs: ["5-Axis Simultaneous", "ISO 9001:2015 Certified", "Full Traceability"]
   },
   {
@@ -49,7 +49,7 @@ const capabilities = [
     materials: ["Titanium Ti-6Al-4V", "High-Tensile Aerospace Alloy", "Stainless 316L / 15-5PH"],
     tolerance: "±0.01 mm",
     caseExample: "Critical primary structural load brackets for HAL LCA Tejas flight hardware and defence airframes.",
-    image: "/images/products/lca-wing-structural.png",
+    image: "/images/components/hal_tejas_wing_fitting.png",
     specs: ["DFM Optimized", "Zero-Defect Standard", "Stress-Tested"]
   },
   {
@@ -73,7 +73,7 @@ const capabilities = [
     materials: ["Carbon Fiber Reinforced Polymers", "Aircraft Grade Aluminum 7075-T6", "POM / Delrin"],
     tolerance: "Precision Aerodynamic Fit",
     caseExample: "Tactical military-grade UAV fin sub-assemblies deployed with IG Drones & Indian Army systems.",
-    image: "/images/products/lca-fin-assembly.png",
+    image: "/images/components/ig_t_joints.png",
     specs: ["Low-RCS Fit", "Rapid Prototyping", "DGCA / Military Spec"]
   },
   {
@@ -85,7 +85,7 @@ const capabilities = [
     materials: ["Copper-Chromium-Niobium (CuCrNb)", "Inconel 718", "Ceramic Matrix Composites"],
     tolerance: "High-Pressure Seal Fit",
     caseExample: "Propulsion R&D and cryogenic upper-stage hardware for ISRO & Bellatrix Aerospace propulsion systems.",
-    image: "/images/products/lca-fuselage-panel.png",
+    image: "/images/clients/isro/isro-hardware-2.png",
     specs: ["3000°F Thermal Rated", "Ultrasonic NDT", "Cleanroom Packaged"]
   },
 ];
