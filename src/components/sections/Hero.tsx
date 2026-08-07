@@ -85,11 +85,11 @@ export default function Hero() {
         {/* Responsive Stats bar */}
         <div
           ref={statsRef}
-          className="mt-10 sm:mt-12 pt-6 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6"
+          className="mt-10 sm:mt-12 pt-6 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6"
         >
           <div>
-            <div className="text-xl sm:text-3xl font-bold text-white font-mono">±0.001 mm</div>
-            <div className="text-[10px] sm:text-xs text-slate-400 font-sans mt-0.5">Micro-Machining Precision</div>
+            <div className="text-xl sm:text-3xl font-bold text-white font-mono">0.005 mm</div>
+            <div className="text-[10px] sm:text-xs text-slate-400 font-sans mt-0.5">Machining Precision</div>
           </div>
           <div>
             <div className="text-xl sm:text-3xl font-bold text-white font-mono">ISO 9001:2015</div>
@@ -102,6 +102,10 @@ export default function Hero() {
           <div>
             <div className="text-xl sm:text-3xl font-bold text-white font-mono">Class-1</div>
             <div className="text-[10px] sm:text-xs text-slate-400 font-sans mt-0.5">Flight Structural Parts</div>
+          </div>
+          <div>
+            <div className="text-xl sm:text-3xl font-bold text-white font-mono">98%</div>
+            <div className="text-[10px] sm:text-xs text-slate-400 font-sans mt-0.5">On-Time Delivery</div>
           </div>
         </div>
       </div>
