@@ -12,25 +12,25 @@ const logoTiers = [
   {
     title: "Aerosapien Esteemed Aerospace & Defence Clients",
     logos: [
-      { name: "ISRO", src: "/client_logos/new/isro.png" },
-      { name: "HAL", src: "/client_logos/aeronautical_clients/Hindustan_Aeronautics_Limited_Logo.png" },
-      { name: "Astrobase", src: "/client_logos/new/astrobase.png", zoomClass: "p-1.5" },
-      { name: "Bellatrix", src: "/client_logos/new/bellatrix.png", zoomClass: "p-1.5" },
-      { name: "Textron", src: "/client_logos/aeronautical_clients/Textron_Aviation_logo_2018.svg.webp" },
-      { name: "Recaero", src: "/client_logos/aeronautical_clients/recaero-logo.svg", zoomClass: "p-2" },
-      { name: "IG Drones", src: "/client_logos/new/ig_drones.png" },
-      { name: "LPSC ISRO", src: "/client_logos/aeronautical_clients/Liquid_Propulsion_Systems_Centre_Logo.png" }
+      { name: "ISRO", src: "/client_logos/new/isro.png?v=3" },
+      { name: "HAL", src: "/client_logos/aeronautical_clients/Hindustan_Aeronautics_Limited_Logo.png?v=3" },
+      { name: "Astrobase", src: "/client_logos/new/astrobase.png?v=3", zoomClass: "p-1.5" },
+      { name: "Bellatrix", src: "/client_logos/new/bellatrix.png?v=3", zoomClass: "p-1.5" },
+      { name: "Textron", src: "/client_logos/aeronautical_clients/Textron_Aviation_logo_2018.svg.webp?v=3" },
+      { name: "Recaero", src: "/client_logos/aeronautical_clients/recaero-logo.svg?v=3", zoomClass: "p-2" },
+      { name: "IG Drones", src: "/client_logos/new/ig_drones.png?v=3" },
+      { name: "LPSC ISRO", src: "/client_logos/aeronautical_clients/Liquid_Propulsion_Systems_Centre_Logo.png?v=3" }
     ],
   },
   {
     title: "Customers in Advanced Additive Manufacturing & R&D",
     logos: [
-      { name: "Janatics", src: "/client_logos/additive_clients/janatics_logo.png" },
-      { name: "Wipro 3D", src: "/client_logos/additive_clients/wipro-3d-logo.png", zoomClass: "p-2" },
-      { name: "Intech Additive", src: "/client_logos/additive_clients/intech-iso-logo.png" },
-      { name: "IISc Bengaluru", src: "/client_logos/rd_clients/fSID-logo-img.png" },
-      { name: "Wipro", src: "/client_logos/rd_clients/wipro-logo.png", zoomClass: "p-2" },
-      { name: "Wipro PARI", src: "/client_logos/rd_clients/wipro-pari-logo.png", zoomClass: "p-2" },
+      { name: "Janatics", src: "/client_logos/additive_clients/janatics_logo.png?v=3" },
+      { name: "Wipro 3D", src: "/client_logos/additive_clients/wipro-3d-logo.png?v=3", zoomClass: "p-2" },
+      { name: "Intech Additive", src: "/client_logos/additive_clients/intech-iso-logo.png?v=3" },
+      { name: "IISc Bengaluru", src: "/client_logos/rd_clients/fSID-logo-img.png?v=3" },
+      { name: "Wipro", src: "/client_logos/rd_clients/wipro-logo.png?v=3", zoomClass: "p-2" },
+      { name: "Wipro PARI", src: "/client_logos/rd_clients/wipro-pari-logo.png?v=3", zoomClass: "p-2" },
     ],
   },
 ];
