@@ -40,7 +40,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center group"
+            className="flex items-center group -ml-3 sm:-ml-4"
           >
             <Image
               src={scrolled ? "/brand/main_logo.png" : "/brand/main_logo_white.png"}
