@@ -26,10 +26,11 @@ const logoTiers = [
     title: "Customers in Advanced Additive Manufacturing & R&D",
     logos: [
       { name: "Janatics", src: "/client_logos/additive_clients/janatics_logo.png" },
-      { name: "Wipro 3D", src: "/client_logos/additive_clients/wipro_new_logo.png" },
+      { name: "Wipro 3D", src: "/client_logos/additive_clients/wipro-3d-logo.png", zoomClass: "p-2" },
       { name: "Intech Additive", src: "/client_logos/additive_clients/intech-iso-logo.png" },
       { name: "IISc Bengaluru", src: "/client_logos/rd_clients/fSID-logo-img.png" },
-      { name: "Wipro", src: "/client_logos/rd_clients/wipro-pari-new-logo.png" },
+      { name: "Wipro", src: "/client_logos/rd_clients/wipro-logo.png", zoomClass: "p-2" },
+      { name: "Wipro PARI", src: "/client_logos/rd_clients/wipro-pari-logo.png", zoomClass: "p-2" },
     ],
   },
 ];
@@ -69,7 +70,7 @@ export default function TieredTrustWall() {
       {/* Drastically Improved Header with Top-Right Button */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 relative z-10 max-w-6xl mx-auto px-6 gap-6">
         <div className="max-w-2xl text-left">
-          <span className="text-[var(--color-brand-accent)] font-semibold tracking-[0.2em] uppercase text-xs px-4 py-1.5 rounded-full bg-[#00b5e2]/10 border border-[#00b5e2]/20">
+          <span className="inline-block text-[10px] sm:text-xs text-[var(--color-brand-accent)] font-semibold tracking-[0.15em] uppercase px-3 py-1 rounded-full bg-[#00b5e2]/10 border border-[#00b5e2]/20 max-w-full text-center leading-normal">
             Trusted Aerospace & Defence Network
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mt-4 tracking-tight text-white leading-tight">
@@ -94,11 +95,11 @@ export default function TieredTrustWall() {
           <div key={tIdx}>
             {/* Tier divider */}
             <div className="flex items-center space-x-4 mb-8">
-              <span className="h-[1px] flex-1 bg-gradient-to-r from-transparent to-slate-800" />
-              <h3 className="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-[#00b5e2] whitespace-nowrap bg-slate-900/80 px-4 py-1.5 rounded-full border border-slate-800">
+              <span className="h-[1px] flex-1 bg-gradient-to-r from-transparent to-slate-800 hidden sm:block" />
+              <h3 className="text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.1em] sm:tracking-[0.2em] text-[#00b5e2] text-center whitespace-normal sm:whitespace-nowrap bg-slate-900/80 px-4 py-2 rounded-2xl sm:rounded-full border border-slate-800 max-w-[85vw] sm:max-w-none leading-relaxed mx-auto">
                 {tier.title}
               </h3>
-              <span className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-slate-800" />
+              <span className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-slate-800 hidden sm:block" />
             </div>
 
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
