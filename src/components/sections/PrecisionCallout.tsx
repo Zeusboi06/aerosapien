@@ -3,9 +3,9 @@
 import { Gauge, ShieldCheck, Compass, Layers, Award } from "lucide-react";
 
 const callouts = [
-  { icon: Gauge, label: "Precision", value: "±0.001 mm" },
+  { icon: Gauge, label: "Precision", value: "0.005 mm" },
   { icon: Layers, label: "Materials", value: "Ti / Inconel 718" },
-  { icon: ShieldCheck, label: "Quality", value: "AS9100D" },
+  { icon: ShieldCheck, label: "Quality", value: "ISO 9001:2015" },
   { icon: Compass, label: "Heritage", value: "ISRO & HAL" },
   { icon: Award, label: "Traceability", value: "100% Certified" },
 ];
