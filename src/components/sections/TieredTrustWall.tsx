@@ -109,14 +109,14 @@ export default function TieredTrustWall() {
                     className="trust-card group flex flex-col items-center justify-center"
                   >
                     <div
-                      className="relative w-32 h-32 md:w-36 md:h-36 flex items-center justify-center p-6 rounded-full bg-white/90 backdrop-blur-md border border-white/20 shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-105 hover:-translate-y-1.5 hover:shadow-[0_0_30px_rgba(0,181,226,0.4)] hover:border-[#00b5e2]/80"
+                      className="relative w-32 h-32 md:w-36 md:h-36 flex items-center justify-center p-4 rounded-full bg-white/20 backdrop-blur-lg border border-white/30 shadow-[0_8px_32px_0_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-105 hover:-translate-y-1.5 hover:shadow-[0_0_30px_rgba(0,181,226,0.5)] hover:border-[#00b5e2]/80"
                     >
                       <Image
                         src={logo.src}
                         alt={logo.name}
                         width={120}
                         height={120}
-                        className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105"
+                        className="object-contain w-full h-full filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.2)] transition-transform duration-300 group-hover:scale-110"
                         unoptimized
                       />
                     </div>
