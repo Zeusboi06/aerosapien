@@ -23,7 +23,7 @@ const capabilities = [
     badge: "Sub-Millimetre Accuracy",
     summary: "Micro-tolerance milling & turning for complex 3D aerospace geometries and load-bearing flight hardware.",
     materials: ["Titanium Grade 5 (Ti-6Al-4V)", "Inconel 718", "NCM Steel (EN24/EN36B)", "Aluminum 7075-T6"],
-    tolerance: "±0.001 mm",
+    tolerance: "±0.005 mm",
     caseExample: "LCA Tejas Light Combat Aircraft wing attachment fittings and landing gear components engineered for HAL.",
     image: "/images/products/lca-part-clean.png",
     specs: ["5-Axis Simultaneous", "ISO 9001:2015 Certified", "Full Traceability"]
@@ -35,7 +35,7 @@ const capabilities = [
     badge: "Lightweight Structural",
     summary: "Advanced multi-axis structural frames engineered for high vibration and extreme G-force environments.",
     materials: ["Titanium Alloy (Ti-6Al-4V)", "Inconel 625/718", "AlSi10Mg Aluminum", "Aerospace Composites"],
-    tolerance: "±0.001 mm",
+    tolerance: "±0.005 mm",
     caseExample: "Regenerative cooling channel nozzles & complex space propulsion frames for Wipro 3D & Intech Additive.",
     image: "/images/products/lca-complex-frame.png",
     specs: ["Topology Optimized", "Vacuum-Rated", "High Strength-to-Weight"]
@@ -47,7 +47,7 @@ const capabilities = [
     badge: "Aero-Structure",
     summary: "Precision-milled structural brackets and flight-critical wing-fuselage connection hardware.",
     materials: ["Titanium Ti-6Al-4V", "High-Tensile Aerospace Alloy", "Stainless 316L / 15-5PH"],
-    tolerance: "±0.01 mm",
+    tolerance: "±0.005 mm",
     caseExample: "Critical primary structural load brackets for HAL LCA Tejas flight hardware and defence airframes.",
     image: "/images/components/hal_tejas_wing_fitting.png",
     specs: ["DFM Optimized", "Zero-Defect Standard", "Stress-Tested"]
@@ -146,7 +146,7 @@ export default function CapabilityDeepDive() {
             
             {/* Left Image Column */}
             <div className="lg:col-span-5 flex flex-col items-center justify-center">
-              <div className="relative w-full aspect-square max-w-[360px] bg-transparent rounded-2xl p-6 border border-transparent  flex items-center justify-center group overflow-hidden">
+              <div className="relative w-full aspect-square max-w-[360px] bg-slate-50 rounded-2xl p-6 border border-slate-200/80 shadow-md flex items-center justify-center group overflow-hidden">
                 <Image
                   src={selectedCap.image}
                   alt={selectedCap.title}
