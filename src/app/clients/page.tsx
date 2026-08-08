@@ -61,7 +61,7 @@ function ClientsContent() {
             Powering India&apos;s Flagship <span className="text-[#00b5e2]">Aerospace & Defence Programs</span>
           </h1>
           <p className="text-slate-300 text-base md:text-lg leading-relaxed font-sans mb-8">
-            AEROSAPIEN is a premier precision manufacturing and engineering partner based in Bengaluru, India. We specialize in Class-1 critical structural aerospace components, space propulsion hardware, tactical UAV assemblies, and high-precision medical automation devices. Operating under strict ISO 9001:2015 quality standards with precision micro-machining tolerances up to ±0.001 mm, we are a trusted defense supplier to HAL, ISRO LPSC, Astrobase, Cambrian Bioworks, and global aerospace leaders.
+            AEROSAPIEN is a premier precision manufacturing and engineering partner based in Bengaluru, India. We specialize in Class-1 critical structural aerospace components, space propulsion hardware, tactical UAV assemblies, and high-precision medical automation devices. Operating under strict ISO 9001:2015 quality standards with precision micro-machining tolerances up to ±0.005 mm, we are a trusted defense supplier to HAL, ISRO LPSC, Astrobase, Cambrian Bioworks, and global aerospace leaders.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-slate-800">
@@ -76,7 +76,7 @@ function ClientsContent() {
               <Zap className="w-5 h-5 text-[#00b5e2] shrink-0" />
               <div>
                 <div className="text-xs text-slate-400 font-sans">Machining Precision</div>
-                <div className="text-sm font-bold text-white">±0.001 mm</div>
+                <div className="text-sm font-bold text-white">±0.005 mm</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
