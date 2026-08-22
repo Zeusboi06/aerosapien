@@ -45,8 +45,8 @@ website desktop format preview.mp4
 *.docx
 *.exe
 eng.traineddata
-AEROSAPIEN*.png
-AEROSAPIEN_PART*.png
+/AEROSAPIEN*.png
+/AEROSAPIEN_PART*.png
 main_logo-removebg-preview.png
 client logos/
 
