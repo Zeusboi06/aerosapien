@@ -1,8 +1,12 @@
+"use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
+  const [year, setYear] = useState<number | null>(null);
+  useEffect(() => { setYear(new Date().getFullYear()); }, []);
   return (
     <footer className="bg-[var(--color-deep-navy)] text-white pt-16 pb-8 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -17,7 +21,6 @@ export default function Footer() {
                 width={230}
                 height={56}
                 className="object-contain"
-                unoptimized
               />
             </Link>
             <p className="text-slate-400 font-sans max-w-sm leading-relaxed text-sm">
@@ -51,7 +54,7 @@ export default function Footer() {
         <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
           <div className="flex items-center space-x-3">
             <p className="text-slate-500 font-sans text-xs">
-              © {new Date().getFullYear()} Aerosapien Technologies. All rights reserved.
+              © {year ?? 2025} Aerosapien Technologies. All rights reserved.
             </p>
           </div>
           <div className="flex space-x-6 text-xs font-sans text-slate-500">

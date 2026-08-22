@@ -8,25 +8,25 @@ import Image from "next/image";
 
 const galleryItems = [
   {
-    image: "http://aerosapien.co.in/wp-content/uploads/2024/08/Picture22.jpg",
+    image: "/images/factory/cnc_machining_center.jpg",
     title: "5-Axis CNC Machining",
     description: "High-precision multi-axis manufacturing",
     span: "md:col-span-2 md:row-span-2",
   },
   {
-    image: "http://aerosapien.co.in/wp-content/uploads/2024/08/Picture40.jpg",
+    image: "/images/factory/cmm_metrology_inspection.jpg",
     title: "CMM Inspection",
     description: "Coordinate Measuring Machine verification",
     span: "",
   },
   {
-    image: "http://aerosapien.co.in/wp-content/uploads/2024/08/Picture13.jpg",
+    image: "/images/factory/metal_3d_printing.jpg",
     title: "Additive Manufacturing",
     description: "Titanium, Inconel, NCM Steel",
     span: "",
   },
   {
-    image: "http://aerosapien.co.in/wp-content/uploads/2024/08/Picture17-2.jpg",
+    image: "/images/factory/turbine_propulsion_assembly.jpg",
     title: "UAV Assembly & Integration",
     description: "Military-grade airframe production",
     span: "md:col-span-2",
