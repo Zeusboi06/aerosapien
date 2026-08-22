@@ -6,22 +6,22 @@ const highlightClients = [
   {
     name: "ISRO",
     description: "Critical Space Propulsion Systems & LPSC Hardware",
-    src: "/client_logos/new/isro.png?v=4",
+    src: "/client_logos/new/isro.png",
   },
   {
     name: "HAL",
     description: "LCA Tejas Structural Assemblies & Flight Hardware",
-    src: "/client_logos/aeronautical_clients/Hindustan_Aeronautics_Limited_Logo.png?v=4",
+    src: "/client_logos/aeronautical_clients/Hindustan_Aeronautics_Limited_Logo.png",
   },
   {
     name: "Astrobase",
     description: "Advanced Space Technologies & Commercial Launch Systems",
-    src: "/client_logos/new/astrobase.png?v=4",
+    src: "/client_logos/new/astrobase.png",
   },
   {
     name: "Textron Aviation",
     description: "Precision Aerospace Structural & Flight Components",
-    src: "/client_logos/aeronautical_clients/Textron_Aviation_logo_2018.svg.webp?v=4",
+    src: "/client_logos/aeronautical_clients/Textron_Aviation_logo_2018.svg.webp",
   },
 ];
 

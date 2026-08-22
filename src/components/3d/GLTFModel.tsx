@@ -50,5 +50,3 @@ export default function GLTFModel({
   );
 }
 
-useGLTF.preload("/models/turbine_blade.glb");
-

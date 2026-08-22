@@ -43,9 +43,12 @@ next-env.d.ts
 # Large reference files - not needed in repo
 website desktop format preview.mp4
 *.docx
+*.exe
 eng.traineddata
 AEROSAPIEN*.png
 AEROSAPIEN_PART*.png
+main_logo-removebg-preview.png
+client logos/
 
 # Scripts with secrets - excluded from repo
 scripts/
