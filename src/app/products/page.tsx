@@ -51,7 +51,7 @@ const allProducts = [
     material: "High Thermal Conductivity Copper / Aluminium",
     tolerance: "±0.005 mm",
     process: "Precision Surface Milling",
-    img: "/images/products/microfluidic_transparent.png",
+    img: "/images/homepage_components/comp4.jpeg",
     tags: ["Thermal Control", "Reagent Module", "Cleanroom Grade"]
   },
   {

@@ -12,7 +12,7 @@ export default function CbwSection() {
       title: "Microfluidic & Reagent Temperature Control Module",
       desc: "Precision CNC milled thermal management plate and reagent module housing providing uniform heat dissipation for automated biochemical sample processing.",
       material: "High Thermal Conductivity Copper / Aluminium Alloy",
-      image: "/images/products/microfluidic_transparent.png",
+      image: "/images/homepage_components/comp4.jpeg",
       tags: ["Thermal Control", "Corrosion Resistant", "Cleanroom Compatible"]
     },
     {
