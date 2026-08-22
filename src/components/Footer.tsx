@@ -18,9 +18,10 @@ export default function Footer() {
               <Image
                 src="/brand/main_logo_white.png"
                 alt="Aerosapien Logo"
-                width={230}
-                height={56}
-                className="object-contain"
+                width={200}
+                height={45}
+                priority
+                className="h-9 sm:h-10 w-auto object-contain"
               />
             </Link>
             <p className="text-slate-400 font-sans max-w-sm leading-relaxed text-sm">

@@ -43,12 +43,12 @@ export default function Navbar() {
             className="flex items-center group -ml-3 sm:-ml-4"
           >
             <Image
-              src="/brand/aerosapien-logo-full.png"
+              src={scrolled ? "/brand/main_logo.png" : "/brand/main_logo_white.png"}
               alt="Aerosapien"
               width={200}
-              height={50}
-              className={`object-contain transition-all duration-300 ${scrolled ? "" : "brightness-0 invert drop-shadow-[0_1px_8px_rgba(255,255,255,0.4)]"}`}
-              unoptimized
+              height={45}
+              priority
+              className="h-9 sm:h-10 w-auto object-contain transition-opacity duration-300"
             />
           </Link>
 
